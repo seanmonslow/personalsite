@@ -1,5 +1,8 @@
 import * as React from "react"
 import "../components/layout.css"
+import github from "../images/GitHub-Mark-32px.png"
+import linkedinImage from "../images/LI-In-Bug.png"
+import profile from "../images/profile.png"
 
 // styles
 const imagesStyle = {
@@ -122,7 +125,7 @@ const IndexPage = () => {
       <title>Home Page</title>
       <img
         alt="Profile picture"
-        src="/images/profile.png"
+        src={profile}
         style={profileStyle}
       />
       <h1 style={headingStyles}>
@@ -130,10 +133,10 @@ const IndexPage = () => {
       </h1>
       <div style={imagesStyle}>
         <a href="https://www.github.com/seanmonslow">
-          <img style={image} src="/images/GitHub-Mark-32px.png" />
+          <img alt="github" style={image} src={github} />
         </a>
         <a href="https://www.linkedin.com/in/sean-onslow-391086152/">
-          <img style={linkedIn} src="/images/LI-In-Bug.png" />
+          <img alt="linkedin" style={linkedIn} src={linkedinImage} />
         </a>
       </div>
       <p style={paragraphStyles}>
